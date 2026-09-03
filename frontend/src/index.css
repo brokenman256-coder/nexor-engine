@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap");
+
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background:
+    radial-gradient(1100px 520px at 8% -8%, rgba(92, 48, 140, 0.35), transparent 55%),
+    radial-gradient(900px 480px at 100% 0%, rgba(140, 72, 18, 0.28), transparent 50%),
+    #08060c;
+  color: #f4efe8;
+  font-family: Manrope, system-ui, sans-serif;
+}
+.eq-title { font-family: Syne, Manrope, sans-serif; letter-spacing: -0.03em; }
+.eq-shell { min-height: 100%; background: transparent; }
+.eq-card {
+  background: linear-gradient(180deg, rgba(24, 18, 32, 0.92), rgba(12, 10, 16, 0.88));
+  border: 1px solid rgba(212, 160, 84, 0.18);
+  border-radius: 1.5rem;
+  padding: 1.4rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+.eq-card-hot { border-color: rgba(212, 160, 84, 0.55); box-shadow: 0 0 40px rgba(212, 160, 84, 0.12); }
+.eq-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: linear-gradient(90deg, #d4a054, #b7792b);
+  color: #1a1208; font-weight: 800; border-radius: 0.9rem;
+  padding: 0.75rem 1.1rem; border: 0; cursor: pointer;
+}
+.eq-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.eq-ghost {
+  background: transparent; color: #e8dcc8; border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 0.9rem; padding: 0.7rem 1rem; cursor: pointer;
+}
+.eq-input {
+  background: #0b090f; border: 1px solid rgba(212,160,84,0.25); color: #f4efe8;
+  border-radius: 0.9rem; padding: 0.7rem 0.9rem; outline: none;
+}
+.eq-kicker { font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(212,160,84,0.75); }
+.eq-meter { height: 8px; background: rgba(255,255,255,0.08); border-radius: 99px; overflow: hidden; }
+.eq-meter span { display: block; height: 100%; background: linear-gradient(90deg, #7c6cff, #d4a054); }
+.eq-meter-health span { background: linear-gradient(90deg, #ef4444, #d4a054, #34d399); }
+.eq-hero { padding: 1.5rem 0 0.5rem; }
+.eq-alert { background: rgba(127, 29, 29, 0.35); border: 1px solid rgba(248,113,113,0.4); color: #fecaca; border-radius: 1rem; padding: 0.9rem 1rem; }
+.eq-mark { box-shadow: 0 0 0 1px rgba(212,160,84,0.4); }
